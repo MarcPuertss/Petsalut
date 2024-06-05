@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{45b0c3b7-bd60-4c0b-aec9-841e4c9baf01}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>PetSalut</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CercadoraAten.h" />
+    <ClInclude Include="CercadoraCentre.h" />
+    <ClInclude Include="CercadoraEsdeveniments.h" />
+    <ClInclude Include="CercadoraMascota.h" />
+    <ClInclude Include="CercadoraClinica.h" />
+    <ClInclude Include="CercadoraParticipa.h" />
+    <ClInclude Include="CercadoraPropietari.h" />
+    <ClInclude Include="CercadoraPublic.h" />
+    <ClInclude Include="CercadoraTipus.h" />
+    <ClInclude Include="CercadoraUsuari.h" />
+    <ClInclude Include="CercadoraValoracio.h" />
+    <ClInclude Include="CercadoraVisita.h" />
+    <ClInclude Include="ConsultaCentresForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ConsultarEvents.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ConsultaVisitesCentreForms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ConsultaVistes_forms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CreaCentreForms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CrearPublic.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CreaVisites_forms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Crea_Mascota_forms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DBConnection.h" />
+    <ClInclude Include="ConsultaMascota_forms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Elimina_Mascota_forms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EliminaCentresForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EliminaVisita_forms.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PantallaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InfoCli.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InfoProp.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="IniUsu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MenuCli.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MenuProp.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModCli.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModProp.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PassarellaAten.h" />
+    <ClInclude Include="PassarellaCentre.h" />
+    <ClInclude Include="PassarellaEsdeveniments.h" />
+    <ClInclude Include="PassarellaMascota.h" />
+    <ClInclude Include="PassarellaParticipa.h" />
+    <ClInclude Include="PassarellaPublic.h" />
+    <ClInclude Include="PassarellaTipus.h" />
+    <ClInclude Include="PassarellaUsuari.h" />
+    <ClInclude Include="PassarellaValoracio.h" />
+    <ClInclude Include="PassarellaVisites.h" />
+    <ClInclude Include="PasswordEncrypt.h" />
+    <ClInclude Include="RegUsu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PassarellaClinica.h" />
+    <ClInclude Include="Ordinador.h" />
+    <ClInclude Include="PassarellaPropietari.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="TxConsultarCentres.h" />
+    <ClInclude Include="TxConsultarMascotes.h" />
+    <ClInclude Include="TxConsultarVisites.h" />
+    <ClInclude Include="TxConsultaUsu.h" />
+    <ClInclude Include="TxCrearAten.h" />
+    <ClInclude Include="TxCrearCentre.h" />
+    <ClInclude Include="TxCrearMascota.h" />
+    <ClInclude Include="TxCrearParticipa.h" />
+    <ClInclude Include="TxCrearValoracio.h" />
+    <ClInclude Include="TxCrearEsdeveniment.h" />
+    <ClInclude Include="TxEliminaCentre.h" />
+    <ClInclude Include="TxEliminaMascota.h" />
+    <ClInclude Include="TxEliminarValoracio.h" />
+    <ClInclude Include="TxEliminaVisita.h" />
+    <ClInclude Include="TxEsborraUsu.h" />
+    <ClInclude Include="TxEsborraParticipa.h" />
+    <ClInclude Include="TxIniciSessio.h" />
+    <ClInclude Include="TxModificaCentre.h" />
+    <ClInclude Include="TxModificarValoracio.h" />
+    <ClInclude Include="TxModUsu.h" />
+    <ClInclude Include="TxRegistraUsu.h" />
+    <ClInclude Include="TxTancaSessio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CercadoraAten.cpp" />
+    <ClCompile Include="CercadoraCentre.cpp" />
+    <ClCompile Include="CercadoraEsdeveniments.cpp" />
+    <ClCompile Include="CercadoraMascota.cpp" />
+    <ClCompile Include="CercadoraClinica.cpp" />
+    <ClCompile Include="CercadoraParticipa.cpp" />
+    <ClCompile Include="CercadoraPropietari.cpp" />
+    <ClCompile Include="CercadoraPublic.cpp" />
+    <ClCompile Include="CercadoraTipus.cpp" />
+    <ClCompile Include="CercadoraUsuari.cpp" />
+    <ClCompile Include="CercadoraValoracio.cpp" />
+    <ClCompile Include="CercadoraVisita.cpp" />
+    <ClCompile Include="ConsultaCentresForm.cpp" />
+    <ClCompile Include="ConsultaMascota_forms.cpp" />
+    <ClCompile Include="ConsultarEvents.cpp" />
+    <ClCompile Include="ConsultaVisitesCentreForms.cpp" />
+    <ClCompile Include="ConsultaVistes_forms.cpp" />
+    <ClCompile Include="CppCLR_WinFormsProject.cpp" />
+    <ClCompile Include="CreaCentreForms.cpp" />
+    <ClCompile Include="CrearPublic.cpp" />
+    <ClCompile Include="CreaVisites_forms.cpp" />
+    <ClCompile Include="Crea_Mascota_forms.cpp" />
+    <ClCompile Include="DBConnection.cpp" />
+    <ClCompile Include="EliminaCentresForm.cpp" />
+    <ClCompile Include="EliminaVisita_forms.cpp" />
+    <ClCompile Include="PantallaPrincipal.cpp" />
+    <ClCompile Include="InfoCli.cpp" />
+    <ClCompile Include="InfoProp.cpp" />
+    <ClCompile Include="IniUsu.cpp" />
+    <ClCompile Include="MenuCli.cpp" />
+    <ClCompile Include="MenuProp.cpp" />
+    <ClCompile Include="ModCli.cpp" />
+    <ClCompile Include="ModProp.cpp" />
+    <ClCompile Include="PassarellaAten.cpp" />
+    <ClCompile Include="PassarellaCentre.cpp" />
+    <ClCompile Include="PassarellaClinica.cpp" />
+    <ClCompile Include="PassarellaEsdeveniments.cpp" />
+    <ClCompile Include="PassarellaMascota.cpp" />
+    <ClCompile Include="PassarellaParticipa.cpp" />
+    <ClCompile Include="PassarellaPublic.cpp" />
+    <ClCompile Include="PassarellaTipus.cpp" />
+    <ClCompile Include="PassarellaUsuari.cpp" />
+    <ClCompile Include="Ordinador.cpp" />
+    <ClCompile Include="PassarellaPropietari.cpp" />
+    <ClCompile Include="PassarellaValoracio.cpp" />
+    <ClCompile Include="PassarellaVisites.cpp" />
+    <ClCompile Include="PasswordEncrypt.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TxConsultarCentres.cpp" />
+    <ClCompile Include="TxConsultarMascotes.cpp" />
+    <ClCompile Include="RegUsu.cpp" />
+    <ClCompile Include="TxConsultarVisites.cpp" />
+    <ClCompile Include="TxConsultaUsu.cpp" />
+    <ClCompile Include="TxCrearAten.cpp" />
+    <ClCompile Include="TxCrearCentre.cpp" />
+    <ClCompile Include="TxCrearMascota.cpp" />
+    <ClCompile Include="TxCrearParticipa.cpp" />
+    <ClCompile Include="TxCrearValoracio.cpp" />
+    <ClCompile Include="TxCrearEsdeveniment.cpp" />
+    <ClCompile Include="TxEliminaCentre.cpp" />
+    <ClCompile Include="TxEliminaMascota.cpp" />
+    <ClCompile Include="TxEliminarValoracio.cpp" />
+    <ClCompile Include="TxEliminaVisita.cpp" />
+    <ClCompile Include="TxEsborraUsu.cpp" />
+    <ClCompile Include="TxEsborraParticipa.cpp" />
+    <ClCompile Include="TxIniciSessio.cpp" />
+    <ClCompile Include="TxModificaCentre.cpp" />
+    <ClCompile Include="TxModificarValoracio.cpp" />
+    <ClCompile Include="TxModUsu.cpp" />
+    <ClCompile Include="TxRegistraUsu.cpp" />
+    <ClCompile Include="TxTancaSessio.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.4.0" />
+    <Reference Include="MySql.Data">
+      <HintPath>MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConsultaCentresForm.resx">
+      <DependentUpon>ConsultaCentresForm.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMascota_forms.resx">
+      <DependentUpon>ConsultaMascota_forms.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarEvents.resx">
+      <DependentUpon>ConsultarEvents.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaVisitesCentreForms.resx">
+      <DependentUpon>ConsultaVisitesCentreForms.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaVistes_forms.resx">
+      <DependentUpon>ConsultaVistes_forms.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreaCentreForms.resx">
+      <DependentUpon>CreaCentreForms.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearPublic.resx">
+      <DependentUpon>CrearPublic.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreaVisites_forms.resx">
+      <DependentUpon>CreaVisites_forms.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crea_Mascota_forms.resx">
+      <DependentUpon>Crea_Mascota_forms.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminaCentresForm.resx">
+      <DependentUpon>EliminaCentresForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminaVisita_forms.resx">
+      <DependentUpon>EliminaVisita_forms.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModCli.resx">
+      <DependentUpon>ModCli.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPrincipal.resx">
+      <DependentUpon>PantallaPrincipal.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCli.resx">
+      <DependentUpon>InfoCli.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoProp.resx">
+      <DependentUpon>InfoProp.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniUsu.resx" />
+    <EmbeddedResource Include="MenuCli.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProp.resx">
+      <DependentUpon>MenuProp.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModProp.resx">
+      <DependentUpon>ModProp.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegUsu.resx">
+      <DependentUpon>ModProp.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elimina_Mascota_forms.resx">
+      <DependentUpon>Elimina_Mascota_forms.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="x64\Release\MySql.Data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Release\MySql.Data.dll" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
