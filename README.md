@@ -1,46 +1,64 @@
-# Repositorio de Aplicaciones Móviles
+# PetSalut: Xarxa Social per a Animals
 
-**Este repositorio contiene tres aplicaciones móviles desarrolladas en Android Studio**, cada una demostrando distintos aspectos de desarrollo para Android. Las aplicaciones están escritas en **Kotlin** e incluyen funcionalidades básicas como botones, sonidos multimedia y un CRUD utilizando una base de datos SQLite.
-
----
-
-## Aplicaciones Incluidas
-
-### Aplicación Simple - *Botones Básicos*
-
-Una aplicación de introducción para explorar el funcionamiento de botones en Android. Esta app muestra cómo se pueden manejar los eventos de botones, incluyendo las acciones de clic y cambio de estado, proporcionando un primer acercamiento a la interacción de usuario en Android.
-
-**Características:**
-- Interfaz sencilla con botones básicos.
-- Ejemplo de lógica para el manejo de eventos de clic.
+**PetSalut** és una aplicació web que actua com una xarxa social per a mascotes, propietaris i clíniques veterinàries. Aquesta aplicació permet gestionar de manera eficient usuaris (propietaris i clíniques), mascotes, esdeveniments públics i visites privades, oferint una experiència unificada i funcional per a tots els participants.
 
 ---
 
-### Aplicación Memory Multimedia - *Juego de Memory con Sonidos*
+## Característiques Principals
 
-Una aplicación interactiva estilo juego de memoria que utiliza sonidos. Esta app es ideal para ver el manejo de archivos multimedia en Android y cómo se pueden integrar sonidos en una actividad de juego.
+### 1. Gestió de Base de Dades
+- **Base de dades robusta i optimitzada** desenvolupada amb MySQL Workbench.
+- Suport per a entitats com:
+  - Propietaris i clíniques veterinàries.
+  - Mascotes i els seus tipus específics.
+  - Centres associats a les clíniques, amb especialitzacions.
+  - Esdeveniments (públics i privats) i valoracions.
 
-**Características:**
-- Juego de memoria clásico con soporte de sonidos.
-- Reproducción de audio en los clics de tarjetas para hacer el juego más inmersivo.
-- Ejemplo de lógica de manejo multimedia y estado del juego en Android.
+### 2. Funcionalitats CRUD
+L'aplicació permet operacions bàsiques de creació, lectura, actualització i eliminació (CRUD) per a:
+- Propietaris.
+- Mascotes.
+- Clíniques i centres.
+
+### 3. Esdeveniments Públics i Privats
+- **Esdeveniments públics:**
+  - Funcionalitat de "feed" per veure informació detallada.
+  - Inscripció i cancel·lació d'esdeveniments per part dels usuaris.
+  - Creació d'esdeveniments públics per fomentar la participació comunitària.
+- **Esdeveniments privats (visites):**
+  - Permeten que els usuaris programin visites amb centres especialitzats.
+  - Inclouen un sistema de valoracions per oferir feedback als centres.
+
+### 4. Interfície d'Usuari
+- **Interfície compartida** per a clíniques i propietaris, que millora l'accessibilitat i facilita l'inici de sessió.
+- **Disseny coherent i interactiu**:
+  - Navegació intuïtiva.
+  - Experiència visual més agradable.
 
 ---
 
-### Aplicación CRUD - *Gestión de Pokémon*
+## Desafiaments i Solucions
 
-Una aplicación CRUD completa con una base de datos SQLite para gestionar una colección de Pokémon. Esta app permite crear, leer, actualizar y eliminar Pokémon, utilizando RecyclerView para mostrar los datos de manera estética y facilitando la navegación y gestión de información mediante varias subactividades.
+Durant el desenvolupament de PetSalut, ens vam trobar amb diversos desafiaments, entre els quals destaquen:
+1. **Falta inicial de planificació de la base de dades:**  
+   Vam ajustar el diagrama de classes per millorar-ne l'estructura i la funcionalitat, garantint una gestió de dades més eficient.
+   
+2. **Problemes amb la classe de connexió:**  
+   Vam refactoritzar la classe, assegurant una comunicació estable entre l'aplicació i la base de dades.
 
-**Características:**
-- Base de datos SQLite para la gestión de datos de Pokémon.
-- Implementación de RecyclerView con tarjetas de diseño personalizado para una mejor presentación de los datos.
-- Funcionalidad de agregar, editar y eliminar Pokémon con confirmación y control de errores.
-- **Campos gestionados:** nombre, salud, tipo, nivel, imagen y tipo de Poké Ball.
-- Interfaz estética e intuitiva.
+3. **Falta d'integració:**  
+   Vam redefinir les històries d'usuari i vam implementar proves integrades per completar funcionalitats de manera satisfactòria.
 
 ---
 
-## Requisitos
+## Requisits del Sistema
 
-- **Android Studio instalado.**
-- Dispositivo o emulador con **Android 5.0 o superior.**
+Per executar PetSalut, es necessiten els següents requisits:
+- **Entorn de Desenvolupament**:
+  - MySQL Workbench per gestionar la base de dades.
+  - IDE per a aplicacions web (com IntelliJ IDEA o Eclipse).
+- **Dependències**:
+  - Connector JDBC per a la comunicació entre l'aplicació i MySQL.
+  - Llibreries per al frontend (HTML, CSS, JavaScript).
+
+---
